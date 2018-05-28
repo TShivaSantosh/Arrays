@@ -45,7 +45,7 @@ func findMajorityElementInArray(_ array:[Int])
     var count = 1
     for i in 1..<array.count
     {
-        (majorityElement == array[i]) ? count += 1: count -= 1
+        (majorityElement == array[i]) ? (count += 1): (count -= 1)
         if count == 0
         {
             majorityElement = array[i]
