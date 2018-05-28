@@ -10,10 +10,9 @@ import UIKit
 2.navigate all elements in back ward from last but one element to zero
 3.if given element is greater than largest print its value and update the largest
  */
-
-var str = "Hello, Leaders in Array"
-
-var array = [2,12,13,4,2,2,2,2,2,2,5,3,2]
+print("***************************")
+print("Hello, Leaders in Array")
+var array = [2,12,13,4,3,10,22,5,3]
 
 print("Given Array \(array)", separator: " ", terminator: "\n")
 print("Output Array is", separator: "", terminator: " ")
@@ -33,12 +32,14 @@ func printArrayLeader(_ array:[Int])
         }
     }
 }
-
 printArrayLeader(array)
+print("***************************")
+print("\nHello, Majority in Array")
 
-
-
-
+/*
+ Majority Element in Array is based on moore Counting Algarithm
+ 
+ */
 func findMajorityElementInArray(_ array:[Int])
 {
     var majorityElement = array[0];
@@ -64,7 +65,7 @@ func findMajorityElementInArray(_ array:[Int])
             }
         }
         
-        maxCount > Int(array.count/2) ? print("\(majorityElement) is given majority element in \(array)") : print("There is no majority Element in given array")
+        maxCount > Int(array.count/2) ? print("\(majorityElement) is majority element in \(array)") : print("There is no majority Element in given array")
         
     }
     else
@@ -73,6 +74,4 @@ func findMajorityElementInArray(_ array:[Int])
     }
 
 }
-
-
 findMajorityElementInArray(array)
